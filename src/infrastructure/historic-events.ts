@@ -15,7 +15,7 @@ interface Event {
 /**
  * 歴史的な出来事レコード
  */
-interface HistoricEvent {
+export interface HistoricEvent {
     // レコードの一意キー
     uuid: string
     // 地名

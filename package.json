@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "serverless/TypeScriptウェルカムプロジェクト",
   "main": "serverless.ts",
+  "scripts": {
+    "init": "node aws/local/create-ddb-tables.js && node aws/local/insert-seeds.js"
+  },
   "engines": {
     "node": ">=14.15.0"
   },

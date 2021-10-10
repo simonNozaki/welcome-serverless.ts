@@ -1,0 +1,12 @@
+version: "3.1"
+services:
+  dynamo-admin:
+    container_name: "welcome-serverless-dynamodb-admin-local"
+    image: instructure/dynamo-local-admin
+    ports:
+      - 8000:8000
+    environment:
+      DYNAMO_ENDPOINT: http://localhost:8000
+      AWS_REGION: 'ap-northeast-1'
+      AWS_ACCESS_KEY_ID: 'AWS_ACCESS_KEY_ID'
+      AWS_SECRET_ACCESS_KEY: 'AWS_SECRET_ACCESS_KEY'
